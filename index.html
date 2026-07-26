@@ -1,39 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jabari White - Cloud Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabari White | Cloud Engineer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jabari White</h1>
-    <h2>Aspiring Cloud Engineer</h2>
 
-    <hr>
+   <header class="hero">
+       <h1>Jabari White</h1>
+       <p> Cloud Engineer | AWS | DevOps Enthusiast</p>
+   </header>
 
-    <h3>About Me</h3>
-    <p>
-        I am building my first cloud project using AWS as part of the Cloud Resume Challenge.
-    </p>
+   <main>
 
-    <h3>Skills</h3>
+       <section class="card">
+           <h2>About Me</h2>
+
+           <p>
+               Motivated cloud professional with a strong foundation in AWS, Python, Linux, Git, Github, HTML, and CSS.
+               I enjoy solving technical problems, learning new technologies, and building reliable solutions. Currently seeking an entry-level Cloud, DevOps, or IT role where I can continue to grow and contribute.
+           </p>
+       </section>
+
+       <section class="card">
+           <h2>Skills</h2>
+
+           <ul>
+               <li>Amazon S3</li>
+               <li>CloudFront</li>
+               <li>AWS Lambda</li>
+               <li>API Gateway</li>
+               <li>DynamoDB</li>
+               <li>Git & GitHub</li>
+               <li>GitHub Actions</li>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>Python</li>
+               <li>Linux</li>
+           </ul>
+       </section>
+
+       <section class="card">
+           <h2>Projects</h2>
+
+           <h3>Cloud Resume Challenge</h3>
+
+           <p>
+               I built a serverless resume website using AWS services including S3,
+               CloudFront, Lambda, API Gateway, and DynamoDB. This project demonstrates hands-on experience with serverless arcitecture, cloud deployment, and CI/CD.
+           </p>
+       </section>
+       <section class="card">
+    <h2>Work Experience</h2>
+
+    <h3>Night Auditor</h3>
+    <p><strong>Hilton Garden Inn</strong> | 2021 – Present</p>
+
     <ul>
-        <li>AWS (learning)</li>
-        <li>HTML</li>
-        <li>Git & GitHub</li>
+        <li>Provided excellent customer service while resolving guest concerns in a fast-paced environment.</li>
+        <li>Balanced daily financial reports and maintained accurate records with strong attention to detail.</li>
+        <li>Troubleshot front desk software and system issues to ensure smooth operations.</li>
+        <li>Worked independently during overnight shifts while managing multiple priorities.</li>
+        <li>Communicated effectively with team members and management to support daily operations.</li>
     </ul>
+</section>
+<section class="card">
+    <h2>Contact</h2>
 
-    <h3>Projects</h3>
-    <p>Cloud Resume Challenge - In progress</p>
-<div>
-  Visitor count: <span id="visitor-count">Loading...</span>
-</div>
-<script>
-  fetch("https://xvha7pkdf3.execute-api.us-east-1.amazonaws.com/prod/visitor-count")
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById("visitor-count").textContent = data;
-    });
-</script>
+    <p><strong>Email:</strong>
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+    </p>
+
+    <p><strong>GitHub:</strong></p>
+        <a class="contact-btn" href="https://github.com/jabariwhite20" target="_blank">
+            github.com/jabariwhite20
+        </a>
+    </p>
+
+    <p><strong>LinkedIn:</strong></p>
+        <a class="contact-btn" href="https://www.linkedin.com/in/jabari-white-099052375" target="_blank">
+            linkedin.com/in/jabari-white-099052375
+        </a>
+    </p>
+
+    <p><strong>Location:</strong> Connecticut, USA</p>
+</section>
+
+       <section class="card">
+           <h2>Website Visitors</h2>
+
+           <p>
+               Visitor Count:
+               <strong><span id="visitor-count">Loading...</span></strong>
+           </p>
+       </section>
+
+   </main>
+
+   <script>
+       fetch("https://xvha7pkdf3.execute-api.us-east-1.amazonaws.com/prod/visitor-count")
+           .then(response => response.json())
+           .then(data => {
+               document.getElementById("visitor-count").textContent = data;
+           });
+   </script>
+
 </body>
 </html>
-
-
