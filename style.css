@@ -92,3 +92,13 @@ strong {
 .contact-btn:hover {
     background-color: #1b5e20;
 }
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+   margin: 0;
+}
