@@ -24,7 +24,7 @@ jobs:
         run: aws s3 sync . s3://jabariwhite-cloud-resume --delete --exclude ".git/*" --exclude ".github/*"
       
       - name: Check AWS Account
-        run: aws sts get-caller-indentity
+        run: aws sts get-caller-identity
       
       - name: Invalidate CloudFront
         run: aws cloudfront create-invalidation --distribution-id E25KB6TWDK633 --paths "/*"
