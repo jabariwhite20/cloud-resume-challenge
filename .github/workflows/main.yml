@@ -22,3 +22,5 @@ jobs:
 
       - name: Sync website to S3
         run: aws s3 sync . s3://jabariwhite-cloud-resume --delete --exclude ".git/*" --exclude ".github/*"
+      - name: Invalidate CloudFront
+        run: aws CloudFront create-invalidation --distribution-id E25KB6TWDK633 --paths "/*"
