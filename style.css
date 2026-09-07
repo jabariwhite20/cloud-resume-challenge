@@ -54,12 +54,30 @@ ul {
    list-style: none;
 }
 
-li {
+.skills-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.skills-list li {
    display: inline-block;
    background: #e0e7ff;
    padding: 8px 14px;
-   margin: 5px;
    border-radius: 20px;
+}
+
+.experience-list {
+   list-style: none;
+   padding-left: 0;
+}
+
+.experience-list li {
+   display: list-item;
+   background: none;
+   padding: 0;
+   margin: 8px 0;
+   border-radius: 0;
 }
 
 strong {
