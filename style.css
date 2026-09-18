@@ -53,6 +53,9 @@ main {
 .card p {
     margin-left: 0px;
     padding-left: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    word-spacing: normal;
 }
 
 .skills-list {
