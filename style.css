@@ -51,16 +51,16 @@ main {
 }
 
 .card p {
-    margin-left: 0px;
-    padding-left: 0;
-    margin-bottom: 15px;
-    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-align: left !important;
     word-spacing: normal;
+    letter-spacing: normal;
 }
 
 .skills-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     list-style: none;
     padding: 0;
